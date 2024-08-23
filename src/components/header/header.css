@@ -1,0 +1,21 @@
+.text {
+    color: white;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color:rgb(94, 94, 227);
+    color: white;
+
+}
+
+.end {
+    color: green;
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+}
