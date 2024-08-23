@@ -1,25 +1,19 @@
-import { useCallback, useState } from 'react';
 import styles from './header.module.scss';
+import { Tooltip } from '../tooltip/tooltip';
+import { Links } from './links/links';
 
 export const Header = () => {
-  const [hoverName, setHoverName] = useState(false);
-
-  const handleMouseOver = useCallback(() => setHoverName(true), []);
-  const handleMouseLeave = useCallback(() => setHoverName(false), []);
   return (
     <div>
       <div className={styles.header}>
-        <h4
-          onMouseEnter={handleMouseOver}
-          onMouseLeave={handleMouseLeave}
-          className={styles.start}
-        >
-          Muhammad Ali
-        </h4>
-        <h4 className={styles.end}>Another 1</h4>
-        <h4 className={styles.end}>Another 2</h4>
+        <div className={styles.start}>
+          {/* <Tooltip title={<h4>Muhammad Ali</h4>} content={<Links />} /> */}
+          <h4>Muhammad Ali</h4>
+        </div>
+        <Links />
+        {/* <h4 className={styles.end}>Another 1</h4>
+        <h4 className={styles.end}>Another 2</h4> */}
       </div>
-      {hoverName && <h4>Another 3</h4>}
     </div>
   );
 };

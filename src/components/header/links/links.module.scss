@@ -1,0 +1,40 @@
+@import '../../../global.scss';
+
+
+.links_list {
+    display: flex;
+    flex-direction: row;
+    // align-items: flex-start;
+    // justify-content: flex-start;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    list-style: none;
+    
+    
+}
+
+a {
+    font-size: smaller;
+    font-family: $font_family;
+
+    color: $seasalt;
+}
+
+a:link {
+}
+
+// a:visited {
+    
+//     // color: $grey;
+// }
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}
