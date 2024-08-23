@@ -1,0 +1,27 @@
+@import '../../global.scss';
+
+.text {
+    color: $white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: $blue_grey;
+    border-radius: 0.5rem 0.5rem 0 0;
+    @extend .text;
+    .start {
+        margin-left: 1rem;
+        margin-right: 80%;
+    }
+    .end {
+        margin-right: 1rem;
+        justify-content: space-between;
+    }
+    .end:hover {
+        color: $light_blue;
+    }
+}
+
+

@@ -1,13 +1,11 @@
-import './header.css';
+import styles from './header.module.scss';
 
 export const Header = () => {
   return (
-    <div className="header">
-      <h4>Muhammad Ali</h4>
-      <div className="end">
-        <h4>alskjf</h4>
-      </div>
-      {/* <h4>{import.meta.env.VITE_VAR}</h4> */}
+    <div className={styles.header}>
+      <h4 className={styles.start}>Muhammad Ali</h4>
+      <h4 className={styles.end}>Another 1</h4>
+      <h4 className={styles.end}>Another 2</h4>
     </div>
   );
 };
