@@ -1,7 +1,7 @@
 import styles from './card.module.scss';
 
 export type CardProps = {
-  title?: string;
+  title?: string | React.ReactNode;
   content?: string | React.ReactNode;
   height?: string;
   width?: string;
