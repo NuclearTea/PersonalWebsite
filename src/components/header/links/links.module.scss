@@ -1,33 +1,18 @@
 @import '../../../global.scss';
 
-
 .links_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  list-style: none;
+  .links {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;;
-    width: fit-content;
-    list-style: none;
-}
-
-a {
-    font-size: smaller;
-    font-family: $font_family;
-    color: $seasalt;
-}
-
-a:link {
-}
-
-// a:visited {
-    
-//     // color: $grey;
-// }
-
-a:focus {
-}
-
-a:hover {
-}
-
-a:active {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }

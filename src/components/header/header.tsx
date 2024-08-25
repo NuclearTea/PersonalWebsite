@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <div className={styles.header}>
       <h4 className={styles.start}>Muhammad Ali</h4>
-      <Links />
+      {/* <Links /> */}
     </div>
   );
 };
