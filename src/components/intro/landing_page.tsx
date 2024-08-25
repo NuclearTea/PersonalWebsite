@@ -1,4 +1,4 @@
-import styles from './intro.module.scss';
+import styles from './landing_page.module.scss';
 import { IntroCard } from './intro_card';
 
 export const Intro = () => {
