@@ -1,11 +1,9 @@
+@import '../../global.scss';
+
 
 .intro {
     display: flex;
     flex-direction: row;
-    align-items: flex-start,
-}
-
-.intro_pic {
-    width: 50%;
-    height: 100%;
+    margin: 0;
+    // align-items: flex-start,
 }
