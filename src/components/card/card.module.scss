@@ -1,0 +1,29 @@
+
+.card {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 0.5rem;
+    background-color: $seasalt;
+}
+
+.card_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card_title {
+    font-family: $font_family;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    color: $black;
+}
+
+.card_text {
+    font-family: $font_family;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    color: $grey;
+}
