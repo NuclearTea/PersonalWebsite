@@ -11,9 +11,8 @@ export const IntroCard = () => {
           <div className={styles.intro_text}>
             <h2 className={styles.title}>Hi, I'm Muhammad Ali</h2>
             <p className={styles.info}>
-              I am a 5th year Computer Science student at the University of
-              Calgary. I am passionate about full stack development and embedded
-              systems.
+              I am a Computer Science student at the University of Calgary. I am
+              passionate about full stack development and embedded systems.
             </p>
             <div className={styles.links}>
               <Links />
