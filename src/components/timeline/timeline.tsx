@@ -25,17 +25,10 @@ export const Timeline = ({ items }: TimelineProps) => {
               flexDirection: 'row',
               justifyContent: 'center',
               alignItems: 'center',
-              //   gap: '1rem',
             }}
           >
             <Circle height="8rem" width="8rem" />
-            <div
-              style={{
-                height: '1rem',
-                width: '15rem',
-                backgroundColor: 'blue',
-              }}
-            />
+            <div className={styles.timeline_connector} />
           </div>
         ))}
       </div>
