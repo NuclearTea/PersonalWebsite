@@ -1,11 +1,26 @@
 import styles from './landing_page.module.scss';
 import { IntroCard } from './intro_card';
+import { Card } from '../card/card';
+import { Timeline } from '../timeline/timeline';
 
-export const Intro = () => {
+export const LandingPage = () => {
   return (
-    <div className={`${styles.intro} ${styles.example}`}>
+    <div className={styles.intro}>
       <IntroCard />
-      <div style={{ height: '25rem' }}>a;slkjfas</div>
+
+      <Card
+        title={<h1 className={styles.title_text}>Full Stack Development</h1>}
+        content={
+          <Timeline
+            items={[
+              { content: 'hello', title: 'hello' },
+              { content: 'something else', title: 'you' },
+            ]}
+          />
+        }
+        width="100%"
+        height="fit-content"
+      />
     </div>
   );
 };

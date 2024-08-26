@@ -9,8 +9,8 @@ export const Circle = ({ height, width }: CircleProps) => {
   return (
     <div
       style={{
-        height: height ?? '100px',
-        width: width ?? '100px',
+        height: height ?? '7rem',
+        width: width ?? '7rem',
       }}
       className={styles.circle}
     />

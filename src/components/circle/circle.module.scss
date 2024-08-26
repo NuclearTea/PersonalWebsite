@@ -1,8 +1,7 @@
 @import '../../global.scss';
 
 .circle {
-  width: 100px;
-  height: 100px;
   background-color: #3498db;
   border-radius: 50%;
+  position: relative;
 }
