@@ -15,26 +15,19 @@ export const Links = () => {
     []
   );
   return (
-    <ul className={styles.links_list}>
+    <ul key={'links'} className={styles.links_list}>
       {options.map((i) => (
-        <>
-          <a
-            key={i.name}
-            href={i.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {i.name === 'LinkedIn' && (
-              <img
-                src={linkedInPic}
-                alt="linkedin"
-                width={'40rem'}
-                height={'30rem'}
-              />
-            )}
-            {i.name === 'GitHub' && <LogoGithubIcon size={40} />}{' '}
-          </a>
-        </>
+        <a key={i.name} href={i.link} target="_blank" rel="noopener noreferrer">
+          {i.name === 'LinkedIn' && (
+            <img
+              src={linkedInPic}
+              alt="linkedin"
+              width={'40rem'}
+              height={'30rem'}
+            />
+          )}
+          {i.name === 'GitHub' && <LogoGithubIcon size={40} />}{' '}
+        </a>
       ))}
     </ul>
   );
