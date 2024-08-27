@@ -3,9 +3,10 @@ import styles from './circle.module.scss';
 export type CircleProps = {
   width?: string;
   height?: string;
+  content?: string | React.ReactNode;
 };
 
-export const Circle = ({ height, width }: CircleProps) => {
+export const Circle = ({ height, width, content }: CircleProps) => {
   return (
     <div
       style={{
@@ -13,6 +14,8 @@ export const Circle = ({ height, width }: CircleProps) => {
         width: width ?? '7rem',
       }}
       className={styles.circle}
-    />
+    >
+      {content}
+    </div>
   );
 };
