@@ -5,17 +5,43 @@ export type CardProps = {
   content?: string | React.ReactNode;
   height?: string;
   width?: string;
+  boxShadow?: string;
+  border?: string;
+  borderRadius?: string;
+  titleSeparator?: string;
 };
 
-export const Card = ({ title, content, height, width }: CardProps) => {
+export const Card = ({
+  title,
+  content,
+  height,
+  width,
+  boxShadow,
+  border,
+  borderRadius,
+  titleSeparator,
+}: CardProps) => {
   return (
     <div
-      style={{ height: height ?? '18rem', width: width ?? '18rem' }}
+      style={{
+        height: height ?? '18rem',
+        width: width ?? '18rem',
+        boxShadow,
+        border,
+        borderRadius,
+      }}
       className={styles.card}
     >
       <div className={styles.card_body}>
-        {title && <h5 className={styles.card_title}>{title}</h5>}
-        {content && <p className={styles.card_text}>{content}</p>}
+        {title && (
+          <div
+            style={{ borderBottom: titleSeparator }}
+            className={styles.card_title}
+          >
+            {title}
+          </div>
+        )}
+        {content && <div className={styles.card_text}>{content}</div>}
       </div>
     </div>
   );
