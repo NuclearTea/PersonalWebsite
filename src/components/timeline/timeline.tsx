@@ -26,7 +26,7 @@ export const Timeline = ({ items }: TimelineProps) => {
             if (i % 2 === (evenOrOdd === 'even' ? 0 : 1)) {
               return card;
             }
-            return <div style={{ height, width }} />;
+            return <div key={i} style={{ height, width }} />;
           })}
         </div>
       );
@@ -39,6 +39,7 @@ export const Timeline = ({ items }: TimelineProps) => {
       <div className={styles.timeline_items}>
         {Array.from({ length: items.length }, (_, i) => (
           <div
+            key={i}
             style={{
               display: 'flex',
               flexDirection: 'row',
