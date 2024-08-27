@@ -48,7 +48,7 @@ export const Timeline = ({ items }: TimelineProps) => {
             }}
           >
             <Circle height="8rem" width="8rem" content={item.date} />
-            {i !== items.length - 1 ? (
+            {i !== items.length - 1 ? ( // not last item
               <div className={styles.timeline_connector} />
             ) : (
               <div style={{ marginRight: '5rem' }} />
