@@ -25,6 +25,7 @@ export const IntroCard = () => {
       }
       height="100%"
       width="100%"
+      border="none"
     />
   );
 };
