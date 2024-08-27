@@ -61,7 +61,7 @@ export const LandingPage = () => {
         width="100%"
         height="fit-content"
         border="none"
-        borderRadius="none"
+        borderRadius="0"
       />
     </div>
   );
