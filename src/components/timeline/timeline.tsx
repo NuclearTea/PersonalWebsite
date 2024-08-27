@@ -33,11 +33,11 @@ export const Timeline = ({ items }: TimelineProps) => {
     },
     [items]
   );
-  return (
-    <span className={styles.timeline}>
-      {displayCards('even')}
+
+  const timeLineCirclesWithConnectors = useCallback(() => {
+    return (
       <div className={styles.timeline_items}>
-        {Array.from({ length: items.length }, (_, i) => (
+        {items.map((item, i) => (
           <div
             key={i}
             style={{
@@ -47,11 +47,21 @@ export const Timeline = ({ items }: TimelineProps) => {
               alignItems: 'center',
             }}
           >
-            <Circle height="8rem" width="8rem" content={items[i].date} />
-            <div className={styles.timeline_connector} />
+            <Circle height="8rem" width="8rem" content={item.date} />
+            {i !== items.length - 1 ? (
+              <div className={styles.timeline_connector} />
+            ) : (
+              <div style={{ marginRight: '5rem' }} />
+            )}
           </div>
         ))}
       </div>
+    );
+  }, [items]);
+  return (
+    <span className={styles.timeline}>
+      {displayCards('even')}
+      {timeLineCirclesWithConnectors()}
       {displayCards('odd')}
     </span>
   );
