@@ -3,7 +3,6 @@ import { Card } from '../card/card';
 import { Circle } from '../circle/circle';
 import styles from './timeline.module.scss';
 import { TimelineProps } from './timeline.types';
-import { LandingPageIds } from '../../const';
 
 export const Timeline = ({ items }: TimelineProps) => {
   const displayCards = useCallback(
@@ -52,7 +51,7 @@ export const Timeline = ({ items }: TimelineProps) => {
     );
   }, [items]);
   return (
-    <span className={styles.timeline} id={LandingPageIds.FULL_STACK}>
+    <span className={styles.timeline}>
       {displayCards('even')}
       {timeLineCirclesWithConnectors()}
       {displayCards('odd')}
