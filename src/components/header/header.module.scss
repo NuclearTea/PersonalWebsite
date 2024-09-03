@@ -1,35 +1,35 @@
 @import '../../global.scss';
 
 .text {
-    color: $white;
-    font-family: $font_family;
-    font-size: $font_size;
-    font-weight: $font_weight;
+  color: $white;
+  font-family: $font_family;
+  font-size: $font_size;
+  font-weight: $font_weight;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: $blue_grey;
-    border-radius: 0.5rem 0.5rem 0 0;
-    height: 5rem;
-    align-items: center;
-    @extend .text;    
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: $blue_grey;
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 5rem;
+  align-items: center;
+  @extend .text;
 }
 .start {
-    margin-left: 1rem;
-    margin-right: 50%;
+  margin-left: 1rem;
+  margin-right: 50%;
 }
 
-
 .end {
-    display: flex;
-    flex-direction: row;
-    margin-right: 1rem;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .end:hover {
-    color: $light_blue;
+  color: $light_blue;
 }
