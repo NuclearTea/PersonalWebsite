@@ -51,7 +51,7 @@ export const Timeline = ({ items }: TimelineProps) => {
     );
   }, [items]);
   return (
-    <span className={styles.timeline}>
+    <span className={styles.timeline} id="timeline">
       {displayCards('even')}
       {timeLineCirclesWithConnectors()}
       {displayCards('odd')}
