@@ -12,6 +12,7 @@ export const LandingPage = () => {
       <div id={LandingPageIds.FULL_STACK}>
         <Card
           title={<h1 className={styles.title_text}>Full Stack Development</h1>}
+          titleSeparator="none"
           content={
             <Timeline
               items={[
