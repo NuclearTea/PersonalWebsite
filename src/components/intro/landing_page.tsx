@@ -17,7 +17,7 @@ export const LandingPage = () => {
             <Timeline
               items={[
                 {
-                  title: <div style={{ marginBottom: '0' }}>UDEAL</div>,
+                  title: <h3>UDEAL</h3>,
                   content: (
                     <div
                       style={{
