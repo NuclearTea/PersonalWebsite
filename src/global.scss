@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 $black: #000100;
 $grey: #a1a6b4;
 $light_blue_green: #94c5cc;
@@ -8,6 +10,8 @@ $blue_grey: #1e4562;
 $sky_blue: #79bbe7;
 
 $font_family_Poppins: 'Poppins', serif;
+$font_family_Playfair_Display: 'Playfair Display', serif;
+$font_family: $font_family_Playfair_Display;
 $font_size: 1.6rem;
 $font_weight: 900;
 $line_height: 1.5;
