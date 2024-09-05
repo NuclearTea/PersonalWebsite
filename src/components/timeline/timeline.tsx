@@ -39,7 +39,12 @@ export const Timeline = ({ items }: TimelineProps) => {
       <div className={styles.timeline_items}>
         {items.map((item, i) => (
           <div key={i} className={styles.timeline_circle_connector_container}>
-            <Circle height="8rem" width="8rem" content={item.date} />
+            <Circle
+              height="8rem"
+              width="8rem"
+              boxShadow="0 0.1rem 0.2rem rgba(0, 0, 0, 0.35)"
+              content={item.date}
+            />
             {i !== items.length - 1 ? ( // not last item
               <div className={styles.timeline_connector} />
             ) : (
