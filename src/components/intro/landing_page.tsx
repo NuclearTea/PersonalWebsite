@@ -1,8 +1,8 @@
-import styles from './landing_page.module.scss';
 import { IntroCard } from './intro_card';
 import { Card } from '../card/card';
 import { Timeline } from '../timeline/timeline';
 import { LandingPageIds } from '../../const';
+import styles from './landing_page.module.scss';
 
 export const LandingPage = () => {
   return (
