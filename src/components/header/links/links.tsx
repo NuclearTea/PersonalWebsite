@@ -15,20 +15,20 @@ export const Links = () => {
     []
   );
   return (
-    <ul key={'links'} className={styles.links_list}>
+    <div key={'links'} className={styles.links_list}>
       {options.map((i) => (
         <a key={i.name} href={i.link} target="_blank" rel="noopener noreferrer">
           {i.name === 'LinkedIn' && (
             <img
               src={linkedInPic}
               alt="linkedin"
-              width={'40rem'}
-              height={'30rem'}
+              width={'30%%'}
+              height={'30%'}
             />
           )}
-          {i.name === 'GitHub' && <LogoGithubIcon size={40} />}{' '}
+          {i.name === 'GitHub' && <LogoGithubIcon size={100} />}{' '}
         </a>
       ))}
-    </ul>
+    </div>
   );
 };

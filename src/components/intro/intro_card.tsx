@@ -6,7 +6,7 @@ import { LandingPageIds } from '../../const';
 
 export const IntroCard = () => {
   return (
-    <div id={LandingPageIds.INTRO}>
+    <div className={styles.intro_card_container} id={LandingPageIds.INTRO}>
       <Card
         content={
           <div className={styles.card_content}>
