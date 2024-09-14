@@ -6,6 +6,9 @@ html {
 
 body {
   font-family: "Playfair Display", serif;
+  a {
+    text-decoration: none;
+  }
 }
 
 nav,
@@ -28,7 +31,6 @@ nav {
   padding: 0;
 
   .header-list-item {
-    text-decoration: none;
     color: black;
     font-weight: 500;
   }
@@ -84,6 +86,37 @@ nav {
 }
 
 .Full-Stack-Development {
+  padding-top: 3rem;
   width: 100%;
   height: 50rem;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+
+    .skill-icons {
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 3rem;
+
+      img {
+        width: 30%;
+        height: 30%;
+      }
+    }
+  }
 }
