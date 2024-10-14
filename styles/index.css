@@ -21,6 +21,11 @@ h1 {
   font-weight: 200;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
 .header-list {
   gap: 1rem;
   list-style: none;
@@ -50,6 +55,7 @@ h1 {
 .About-Me-Content-Right {
   width: 50%;
   height: 50%;
+
   img {
     border-radius: 6rem;
   }
@@ -69,7 +75,7 @@ h1 {
   }
 }
 
-.Full-Stack-Development {
+.Skill-Section {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -95,6 +101,12 @@ h1 {
   }
 }
 
+.other-related-projects {
+  width: 80%;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
 .row,
 .skill-icons,
 .About-Me-Content {
@@ -103,7 +115,7 @@ h1 {
 }
 
 .column,
-.Full-Stack-Development {
+.Skill-Section {
   display: flex;
   flex-direction: column;
 }
