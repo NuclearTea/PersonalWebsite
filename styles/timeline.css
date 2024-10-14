@@ -98,9 +98,15 @@ body {
   padding: 20px 30px;
   background-color: var(--cornsilk);
   position: relative;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   font-family: inherit;
   color: black;
+  text-align: center;
+}
+
+.content:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s ease-in-out;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
