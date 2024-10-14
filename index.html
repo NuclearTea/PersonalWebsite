@@ -33,106 +33,117 @@
     </div>
   </nav>
 
-  <section class="About-Me column">
-    <div class="About-Me-Content">
-      <div class="About-Me-Content-Left">
-        <h1>
-          I am a Computer Science student at the University of Calgary. I
-          am passionate about full stack development and embedded systems.
-        </h1>
-        <div class="Icons">
-          <a href="https://github.com/NuclearTea" rel="noopener noreferrer" target="_blank">
-            <img src="assets/square-github.svg" alt="Github"></img>
-          </a>
-          <a href="https://www.linkedin.com/in/muhammad-ali-6058b61aa/" rel="noopener noreferrer" target="_blank">
-            <img src="assets/linkedin_pic.svg" alt="Linkedin"></img>
-          </a>
+
+  <section id="Website-Content" class="column">
+    <section class="About-Me">
+      <div class="About-Me-Content">
+        <div class="About-Me-Content-Left column">
+          <h1>
+            I am a Computer Science student at the University of Calgary. I
+            am passionate about full stack development and embedded systems.
+          </h1>
+          <div class="Icons row">
+            <a href="https://github.com/NuclearTea" rel="noopener noreferrer" target="_blank">
+              <img src="assets/square-github.svg" alt="Github"></img>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-ali-6058b61aa/" rel="noopener noreferrer" target="_blank">
+              <img src="assets/linkedin_pic.svg" alt="Linkedin"></img>
+            </a>
+          </div>
+        </div>
+        <div class="About-Me-Content-Right">
+          <img
+          width="75%"
+          src="assets/intro_pic.jpg"
+            alt="Me at a farm in the Scottish Highlands with 3 hours of sleep in the past 2 days"></img>
         </div>
       </div>
-      <div class="About-Me-Content-Right">
-        <img class="intro-pic" src="assets/intro_pic.jpg"
-          alt="Me at a farm in the Scottish Highlands with 3 hours of sleep in the past 2 days"></img>
-      </div>
-    </div>
-  </section>
-
-  <section class="Full-Stack-Development column" id="Full-Stack-Development">
-    <h1>
-      Full Stack Development
-    </h1>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="container left">
-          <a href="https://github.com/NuclearTea/UDeal" rel="noopener noreferrer" target="_blank">
+    </section>
+    <section class="Full-Stack-Development" id="Full-Stack-Development">
+      <h1>
+        Full Stack Development
+      </h1>
+      <div class="timeline">
+        <div class="row">
+          <div class="container left">
+            <a href="https://github.com/NuclearTea/UDeal" rel="noopener noreferrer" target="_blank">
+              <div class="content">
+                <h2>UDeal | University of Calgary Project</h2>
+                <h2>April 2022</h2>
+                <p>
+                  UDeal is a marketplace for students where they can create, view, and sell things to fellow students.
+                  Users would need to sign up using their student email and then they can view all items being sold by
+                  students
+                  from their university which could include: books, tutoring, equipment, etc.
+                </p>
+                <p>
+                  It is primarly written in C# using Razor Pages while the backend utilizes .NET Web Api. It has a SQLite
+                  database to store tables for: users, catagories, posts, etc...
+                </p>
+                <h4>Click for details</h4>
+              </div>
+            </a>
+          </div>
+          <div class="skill-icons">
+            <img src="assets/c-sharp-c-seeklogo.svg" alt="C#"></img>
+            <img src="assets/dotnet_logo.svg" alt="dotnet"></img>
+            <img src="assets/sqlite-seeklogo.svg" alt="dotnet"></img>
+            <img src="assets/postman-api-platform-seeklogo.svg" alt="dotnet"></img>
+          </div>
+        </div>
+        <div class="row">
+          <div class="skill-icons">
+            <img src="assets/postman-api-platform-seeklogo.svg" alt="dotnet"></img>
+            <img src="assets/Node.js_logo.svg" alt="Node JS"></img>
+            <img src="assets/ts-logo-128.svg" alt="typescript"></img>
+            <img src="assets/openapi-1.svg" alt="OpenAPI"></img>
+          </div>
+          <div class="container right">
             <div class="content">
-              <h2>UDeal | University of Calgary Project</h2>
-              <h2>April 2022</h2>
-              <p>
-                UDeal is a marketplace for students where they can create, view, and sell things to fellow students.
-                Users would need to sign up using their student email and then they can view all items being sold by
-                students
-                from their university which could include: books, tutoring, equipment, etc.
+              <h2>QA Automation Intern | Imperial Oil</h2>
+              <h2>April 2023 - Sept 2023</h2>
+              <p>I was tasked to create a company exclusive NPM Package which:
+              <ul>
+                <li>Given any OpenAPI Schema and API root url, auto-generate unit tests for each endpoint (including path parameters
+                  and query parameters)
+                  <ul>
+                    <li>The test would make a request to the endpoint using the given path,query and/or request body
+                      information and validate the response definition provided in the OpenAPI Documentation</li>
+                    <li>Gave descriptive error messages if any test fails</li>
+                  </ul>
+                </li>
+                <li>Integrate with the CI/CD Pipline as a github action which ran on branch merge</li>
+                <li>Created story in ADO (Azure DevOps) Board if any test fails</li>
+                <li>Useable as a CLI tool for local development and testing</li>
+              </ul>
               </p>
-              <p>
-                It is primarly written in C# using Razor Pages while the backend utilizes .NET Web Api. It has a SQLite
-                database to store tables for: users, catagories, posts, etc...
-              </p>
-              <h4>Click for details</h4>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="skill-icons">
-          <img src="assets/c-sharp-c-seeklogo.svg" alt="C#"></img>
-          <img src="assets/dotnet_logo.svg" alt="dotnet"></img>
-          <img src="assets/sqlite-seeklogo.svg" alt="dotnet"></img>
-          <img src="assets/postman-api-platform-seeklogo.svg" alt="dotnet"></img>
-          <!-- <img src="assets/dotnet_logo.svg" width="25%" height="25%" alt="dotnet"></img> -->
-          <!-- <img src="assets/dotnet_logo.svg" width="25%" height="25%" alt="dotnet"></img> -->
-
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="skill-icons">
-          <img src="assets/postman-api-platform-seeklogo.svg" alt="dotnet"></img>
-          <img src="assets/Node.js_logo.svg" alt="Node JS"></img>
-          <img src="assets/ts-logo-128.svg" alt="typescript"></img>
-          <img src="assets/openapi-1.svg" alt="OpenAPI"></img>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>QA Automation Intern | Imperial Oil</h2>
-            <h2>April 2023 - Sept 2023</h2>
-            <p>I was tasked to create a company exclusive NPM Package which:
-            <ul>
-              <li>Given any OpenAPI Schema and API root url, auto-generate unit tests for each endpoint (including path parameters
-                and query parameters)
-                <ul>
-                  <li>The test would make a request to the endpoint using the given path,query and/or request body
-                    information and validate the response definition provided in the OpenAPI Documentation</li>
-                  <li>Gave descriptive error messages if any test fails</li>
-                </ul>
-              </li>
-              <li>Integrate with the CI/CD Pipline as a github action which ran on branch merge</li>
-              <li>Created story in ADO (Azure DevOps) Board if any test fails</li>
-              <li>Useable as a CLI tool for local development and testing</li>
-            </ul>
-            </p>
+        <div class="row">
+          <div class="container left">
+            <div class="content">
+              <h2>Full Stack Developer Intern</h2>
+              <h2>Oct 2023 - Aug 2024</h2>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="skill-icons small-img">
+            <img src="assets/dotnet_logo.svg" alt="dotnet"></img>
+            <img src="assets/c-sharp-c-seeklogo.svg" alt="c-sharp"></img>
+            <img src="assets/Microsoft_Azure.svg" alt="Microsoft Azure"></img>
+            <img src="assets/square-github.svg" alt="github"></img>
+            <img src="assets/ts-logo-128.svg" alt="typescript"></img>
+            <img src="assets/Node.js_logo.svg" alt="node js"></img>
+            <img src="assets/react-svgrepo-com.svg" alt="react"></img>
           </div>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="container left">
-          <div class="content">
-            <h2>Full Stack Developer Intern</h2>
-            <h2>Oct 2023 - Aug 2024</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="skill-icons">asf</div>
+      <h1>Other Related Projects</h1>
+      <div class="row">
+    
       </div>
-    </div>
-    <h1>Other Related Projects</h1>
-    <div class="row"></div>
+    </section>
   </section>
 </body>
 

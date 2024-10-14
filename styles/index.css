@@ -16,6 +16,11 @@ nav {
   background-color: white;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
 .header-list {
   gap: 1rem;
   list-style: none;
@@ -27,91 +32,78 @@ nav {
   }
 }
 
+#Website-Content {
+  justify-content: space-between;
+}
+
 .About-Me {
   width: 100%;
-  height: 125vh;
-  /* margin-bottom: 10rem; */
+  height: fit-content;
+}
 
-  .About-Me-Content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.About-Me-Content {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
 
-    .About-Me-Content-Left {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      align-items: center;
+.About-Me-Content-Right {
+  width: 50%;
+  height: 50%;
+  img {
+    border-radius: 6rem;
+  }
+}
 
-      .Icons {
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
+.About-Me-Content-Left {
+  width: 50%;
+  height: 50%;
+  align-items: center;
 
-        img {
-          width: 3rem;
-          height: 3rem;
-        }
-      }
-    }
+  .Icons {
+    gap: 3rem;
 
-    .About-Me-Content-Right {
-      width: 50%;
-      .intro-pic {
-        object-fit: cover;
-        width: 75%;
-        /* height: 100%; */
-        border-radius: 1rem;
-      }
-    }
-
-    h1 {
-      width: 80%;
-      font-size: 2rem;
-      font-weight: 200;
+    img {
+      width: 6vh;
     }
   }
 }
 
 .Full-Stack-Development {
-  padding-top: 3rem;
   width: 100%;
-  height: 50rem;
   justify-content: center;
   align-items: center;
+}
 
-  h1 {
-    font-size: 2rem;
-    font-weight: 500;
-  }
+.skill-icons {
+  width: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3rem;
 
-  .timeline-item {
-    display: flex;
-    flex-direction: row;
-
-    .skill-icons {
-      width: 40%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      gap: 3rem;
-
-      img {
-        width: 30%;
-        height: 30%;
-      }
-    }
+  img {
+    width: 30%;
+    height: 30%;
   }
 }
 
-.row {
+.small-img {
+  img {
+    width: 25%;
+    height: 25%;
+  }
+}
+
+.row,
+.skill-icons,
+.About-Me-Content {
   display: flex;
   flex-direction: row;
 }
 
-.column {
+.column,
+.Full-Stack-Development {
   display: flex;
   flex-direction: column;
 }
