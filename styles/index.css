@@ -16,6 +16,22 @@ nav {
   background-color: white;
 }
 
+.header-name {
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+
+  img {
+    border-radius: 1rem;
+    width: 5%;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 200;
@@ -109,7 +125,8 @@ h2 {
 
 .row,
 .skill-icons,
-.About-Me-Content {
+.About-Me-Content,
+.header-name {
   display: flex;
   flex-direction: row;
 }
