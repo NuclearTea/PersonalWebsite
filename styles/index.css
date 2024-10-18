@@ -2,39 +2,6 @@ a {
   text-decoration: none;
 }
 
-nav,
-.header-list {
-  display: flex;
-}
-
-nav {
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: white;
-}
-
-.header-name {
-  gap: 1rem;
-  justify-content: start;
-  align-items: center;
-
-  img {
-    border-radius: 1rem;
-    width: 5%;
-  }
-}
-
-.header-name-text {
-  transition: color 0.3s ease-in;
-}
-
-.header-name-text:hover {
-  color: var(--redwood);
-}
-
 h1 {
   font-size: 2.5rem;
   font-weight: 200;
@@ -124,8 +91,7 @@ h2 {
 
 .row,
 .skill-icons,
-.About-Me-Content,
-.header-name {
+.About-Me-Content {
   display: flex;
   flex-direction: row;
 }
