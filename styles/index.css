@@ -25,11 +25,14 @@ nav {
     border-radius: 1rem;
     width: 5%;
   }
+}
 
-  a {
-    color: black;
-    text-decoration: underline;
-  }
+.header-name-text {
+  transition: color 0.3s ease-in;
+}
+
+.header-name-text:hover {
+  color: var(--redwood);
 }
 
 h1 {
