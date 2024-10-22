@@ -8,9 +8,11 @@ window.addEventListener("load", function () {
 
 // Get all divs that act as buttons to open modals
 const openModalDivs = document.querySelectorAll("[data-modal]");
+// console.log("🚀 ~ openModalDivs:", openModalDivs);
 
 // Get all modal elements
 const modals = document.querySelectorAll(".modal");
+// console.log("🚀 ~ modals:", modals);
 
 // Add event listeners to div buttons
 openModalDivs.forEach((div) => {

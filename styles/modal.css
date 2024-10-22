@@ -26,6 +26,10 @@
   opacity: 0; /* Start invisible */
   transform: scale(0.9); /* Shrink slightly */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and zoom in */
+
+  p {
+    text-align: start;
+  }
 }
 
 /* Show modal with fade */
