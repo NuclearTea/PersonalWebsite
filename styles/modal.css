@@ -1,0 +1,78 @@
+/* The Modal (hidden by default) */
+.modal {
+  display: block; /* We manage visibility and opacity */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  opacity: 0; /* Start invisible */
+  visibility: hidden; /* Hidden by default */
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth fade */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* Centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Default width for larger screens */
+  max-width: 600px; /* Limit maximum width */
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0; /* Start invisible */
+  transform: scale(0.9); /* Shrink slightly */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and zoom in */
+}
+
+/* Show modal with fade */
+.modal.show {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Set visible */
+}
+
+/* Show modal content with fade */
+.modal.show .modal-content {
+  opacity: 1; /* Fade in content */
+  transform: scale(1); /* Return to normal size */
+}
+
+/* The close button (X) */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 80%; /* Reduce width on smaller screens */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 90%; /* Almost full width */
+    padding: 15px; /* Reduce padding */
+    font-size: 90%; /* Slightly smaller font */
+  }
+
+  .close {
+    font-size: 24px; /* Smaller close button */
+  }
+}
