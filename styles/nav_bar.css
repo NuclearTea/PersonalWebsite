@@ -12,6 +12,17 @@ nav {
   background-color: white;
 }
 
+.header-list {
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+
+  .header-list-item {
+    color: black;
+    font-weight: 500;
+  }
+}
+
 .header-name {
   display: flex;
   flex-direction: row;

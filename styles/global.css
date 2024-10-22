@@ -23,7 +23,7 @@ body {
     left: 0;
     transform: scaleX(0); /* Initially hide the underline */
     transform-origin: bottom right;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
     opacity: 0;
   }
 }
